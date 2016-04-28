@@ -1,0 +1,21 @@
+#pragma once
+#include<iostream>
+#include<assert.h>
+using namespace std;
+enum Type
+{
+	HEAD,
+	VALUE,
+	SUB,
+};
+struct GeneralizedNode
+{
+	Type _type;//类型
+	GeneralizedNode *_next;//同层指向下一数据的节点
+
+	union
+	{
+		int _value;
+		GeneralizedNode* _SubLink;//指向子表的指针
+	};
+}
