@@ -8,6 +8,7 @@ enum Type
 	VALUE,
 	SUB,
 };
+//Is true?
 struct GeneralizedNode
 {
 	Type _type;//类型
